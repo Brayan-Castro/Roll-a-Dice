@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Roll a Dice</title>
+        <link href="assets/styles.css" rel="stylesheet">
+        <link href="favicon.ico" rel="icon">
+    </head>
+    <body class="merda" style="height: 100%;">
+        <div class="tudo">
+            <div class="txt1">Tipo do Dado</div>
+            <select id="tpDado" name="select">
+                <option value="d4">D4</option>
+                <option value="d6">D6</option>
+                <option value="d8">D8</option>
+                <option value="d10">D10</option>
+                <option value="d12">D12</option>
+                <option value="d20">D20</option>
+                <option value="d100">D100</option>
+            </select>
+    
+            <div class="nDados">Quantidade de Dados</div>
+            <select id="qntDado" name="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+    
+            <div class="nameVL">Nome do Personagem</div>
+            <input id="name">
+    
+            <div class="profBonus">Valor do Bonus de Proficiencia</div>
+            <input type="number" id="profVL">
+    
+            <button type="submit" id="btn" onclick="Dados()">Role</button>
+    
+            <div id="result"></div>
+            <div id="result2"></div>
+            <div id="result3"></div>
+            <div id="result4"></div>
+            <div id="result5"></div>
+            <div id="result6"></div>
+            <div id="result7"></div>
+            <div id="result8"></div>
+            <div id="result9"></div>
+            <div id="result10"></div>
+            <div id="rsTotal"></div>
+            
+            <div class="ficha">
+                <input type="file" accept=".pdf" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+                <p>
+                    <button>
+                        <label for="file">Upload da Ficha</label>
+                    </button>
+                </p>
+                <object id="output" height="805px" width="800px"></object>
+            </div>
+        </div>
+    </body>
+    <script src="assets/d20.js"></script>
+    <script src="assets/ficha.js"></script>
+</html>
