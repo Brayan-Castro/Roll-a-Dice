@@ -34,7 +34,7 @@ function discord(nome, valorDado){
     // configuração do webhook do discord
     const request = new XMLHttpRequest();
     // manda um pedido de mensagem para o webhook usando seu URL
-    request.open("POST", "https://discord.com/api/webhooks/962902967445512222/ox8BkwGkENlEm-vxgLmZWtF8XDEKrjYkI5ZvN18qrly1U4gjDtFx2gSQqotqTdMWDalI")
+    request.open("POST", "https://discord.com/api/webhooks/980481105922756628/RSiaeeLmU_-VFwGeLHoKMLMTwvjQJeydJL2cBdTaY4ztQstNVr1nhu65ykyzgx26kt0R")
     request.setRequestHeader('Content-type', 'application/json');
 
     // parametros da mensagem do webhook do discord
